@@ -1,7 +1,7 @@
 #!/bin/bash
 
-envName=${env.ENV_NAME}
-buildNum=${env.BUILD_NUMBER}
+envName=$(env.ENV_NAME)
+buildNum=$(env.BUILD_NUMBER)
 package_file='build-envName-buildNum.tgz'
 for filename in app.js package.json
 do
