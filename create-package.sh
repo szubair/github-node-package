@@ -2,10 +2,10 @@
 
 envName=${ENV_NAME}
 buildNum=${BUILD_NUMBER}
-package_file='build-envName-buildNum.tgz'
+package_file='build-$envName-$buildNum.tgz'
 for filename in app.js package.json
 do
   echo "file: $filename"
-  echo "tar -cxvf $package_file $filename"
+  tar -cxvf $package_file $filename
 done
 
